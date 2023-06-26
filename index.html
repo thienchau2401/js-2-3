@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="fs-1 fw-bold text-uppercase mb-5 text-center">Bai tuan javascript tuan 2-3</h1>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-bai1"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bai 1</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-bai2" type="button"
+          role="tab" aria-controls="pills-profile" aria-selected="false">Bai 2</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-bai3" type="button"
+          role="tab" aria-controls="pills-contact" aria-selected="false">Bai 3</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-bai4" type="button"
+          role="tab" aria-controls="pills-contact" aria-selected="false">Bai 4</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-bai5" type="button"
+          role="tab" aria-controls="pills-contact" aria-selected="false">Bai 5</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-bai1" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <h2 class="text-center">Chuong trinh tinh luong</h2>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so ngay</label>
+          <input type="text" class="form-control" name="" id="soNgay" aria-describedby="helpId" placeholder="ex:1ngay">
+        </div>
+        <button class="btn btn-danger mb-3" id="btnTinhLuong">Tinh tien luong</button>
+        <div class="bg-danger" id="tienLuong"></div>
+      </div>
+      <div class="tab-pane fade" id="pills-bai2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <h2 class="text-center">Chuong trinh tinh trung binh 5 so</h2>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so thu 1</label>
+          <input type="text" class="form-control" name="" id="soThu1" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so thu 2</label>
+          <input type="text" class="form-control" name="" id="soThu2" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so thu 3</label>
+          <input type="text" class="form-control" name="" id="soThu3" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so thu 4</label>
+          <input type="text" class="form-control" name="" id="soThu4" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so thu 5</label>
+          <input type="text" class="form-control" name="" id="soThu5" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="btn btn-danger" id="btnTrungBinh">tinh trung binh 5 so thuc</button>
+        <div id="soTrungBinh"></div>
+      </div>
+      <div class="tab-pane fade" id="pills-bai3" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <h2 class="text-center">Chuong trinh quy doi tien</h2>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so tien USD can doi</label>
+          <input type="text" class="form-control" name="" id="tienUSD" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="btn btn-danger" id="btnDoiTien">Quy doi tien</button>
+        <div id="tienDoi"></div>
+      </div>
+      <div class="tab-pane fade" id="pills-bai4" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <h2 class="text-center">Chuong trinh tinh chu vi va dien tich hinh chu nhat</h2>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap chieu dai</label>
+          <input type="text" class="form-control" name="" id="chieuDai" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap chieu rong</label>
+          <input type="text" class="form-control" name="" id="chieuRong" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="btn btn-danger" id="btnTinh">Tinh chu vi va dien tich</button>
+        <div id="chuViDienTich"></div>
+      </div>
+      <div class="tab-pane fade" id="pills-bai5" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <h2 class="text-center">Chuong trinh tinh tong 2 ky so</h2>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhap so co 2 chu so</label>
+          <input type="text" class="form-control" name="" id="txtSo" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="btn btn-danger" id="btnTinhTong">tinh tong</button>
+        <div id="2KySo"></div>
+      </div>
+  
+    </div>
+  </div>
+
+
+  
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
